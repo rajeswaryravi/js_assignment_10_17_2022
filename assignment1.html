@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+textarea{
+height:60px;
+}
+.submit{
+margin-top:20px;
+margin-left:20px;
+border:2px solid #000;
+}
+</style>
+<script>
+function showformdetails(){
+}
+</script>
+</head>
+<body>
+
+<h2>Exhibitor Registration</h2>
+
+<div class="row">
+  <div class="column">
+   <form>
+ <label for="prefix">Prefix</label><br>
+  <input type="text" id="prefix" name="prefix"><br>
+  <label for="fname">Name:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="ppronoun">Preferred Pronouns</label><br>
+  <input type="text" id="ppronoun" name="ppronoun"><br>
+  <label for="email">Email</label><br>
+  <input type="text" id="ppronoun" name="ppronoun"><br>
+  <label for="wph">Work Phone</label><br>
+  <input type="text" id="wph" name="wph"><br>
+  <label for="cph">Cell Phone</label><br>
+  <input type="text" id="cph" name="cph"><br>
+  <label for="jt">Job Title</label><br>
+  <input type="text" id="jt" name="jt"><br>
+  <label for="company">Company</label><br>
+  <input type="text" id="company" name="company"><br>
+  <label for="ba">Full Bussiness Address</label><br>
+  <input type="text" id="ba" name="ba"><br>
+  <label for="cw">Company Website</label><br>
+  <input type="text" id="cw" name="cw"><br>
+  </form> 
+<input type="submit" value="Submit" class="submit" onclick="showformdetails()">
+  </div>
+  <div class="column">
+  <form>
+   <label for="cd">Company Description</label><br>
+  <textarea id="cd" name="cd"></textarea><br>
+   <label for="ps">Product/Service to exhibit</label><br>
+  <textarea id="ps" name="ps"></textarea><br>
+   <label for="booth">What type of booth do you like</label><br>
+  <input type="radio" id="pb" name="pb" value="In-person booth only">
+  <label for="pb">In-person booth only</label><br>
+  <input type="radio" id="vb" name="vb" value="Virtual booth only">
+  <label for="vb">Virtual booth only</label><br>
+  <input type="radio" id="both" name="both" value="Virtual&In-person booth">
+  <label for="both">Virtual & In-person booth</label>
+   <label for="cd">List your staff</label><br>
+  <textarea id="staff" name="staff"></textarea><br>
+   <label for="cd">Compitators you don't wnat to be near</label><br>
+  <textarea id="cn" name="cn"></textarea><br>
+  </form>
+  </div>
+  
+</div>
+
+</body>
+</html>
